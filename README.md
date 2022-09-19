@@ -76,10 +76,10 @@ docker exec -it knative-control-plane crictl images
 
 ## Deploying a Knative Service
 ```
-kn service create hello-world \                          
+kn service create hello-world \
 --image dev.local/knative-demo/hello-world:latest \
---pull-policy Never \
---port 8080
+--port 8080 \
+--pull-policy Never
 ```
 
 ## Send HTTP request using curl
